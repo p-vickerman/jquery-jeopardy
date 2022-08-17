@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrick Vickerman Jeopardy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="head">
+          <h1>JQUERY JEOPARDY</h1>
+          <h3 id="score"></h3>
+        </div>
+      </header>
+
+      <main>
+        <div id="grid">
+          <div id="twos">
+            <div class="200 titles">$200</div>
+            <div class="200 titles">$200</div>
+            <div class="200 titles">$200</div>
+            <div class="200 titles">$200</div>
+            <div class="200 titles">$200</div>
+          </div>
+          <div id="fours">
+            <div class="400 titles">$400</div>
+            <div class="400 titles">$400</div>
+            <div class="400 titles">$400</div>
+            <div class="400 titles">$400</div>
+            <div class="400 titles">$400</div>
+          </div>
+          <div id="sixes">
+            <div class="600 titles">$600</div>
+            <div class="600 titles">$600</div>
+            <div class="600 titles">$600</div>
+            <div class="600 titles">$600</div>
+            <div class="600 titles">$600</div>
+          </div>
+          <div id="eights">
+            <div class="800 titles">$800</div>
+            <div class="800 titles">$800</div>
+            <div class="800 titles">$800</div>
+            <div class="800 titles">$800</div>
+            <div class="800 titles">$800</div>
+          </div>
+          <div id="tens">
+            <div class="1000 titles">$1000</div>
+            <div class="1000 titles">$1000</div>
+            <div class="1000 titles">$1000</div>
+            <div class="1000 titles">$1000</div>
+            <div class="1000 titles">$1000</div>
+          </div>
+        </div>
+        <div id="question"></div>
+      </main>
+
+      <footer>
+        <form id="form">
+          <div id="input">
+            <label class="bottom">Your Answer</label>
+            <input
+              type="text"
+              placeholder="TYPE ANSWER HERE"
+              class="bottom"
+              id="answer"
+            />
+          </div>
+          <div id="submitButton" class="button">
+            <input id="submit" type="submit" value="submit" />
+          </div>
+        </form>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="jeopardy.json"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
